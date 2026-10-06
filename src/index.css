@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #FFF0F6;
+  --hero-bg: #FFE1EC;
+  --gold-dark: #FF3D8D;
+  --gold: #FF6BA6;
+  --gold-accent: #F2C464;
+  --text-dark: #1A1A1A;
+  --text-gray: #6B6570;
+  --olive: #E0115F;
+  --olive-dark: #B80D4D;
+  --price: #E0115F;
+  --border: #FBD9E6;
+  --wa: #25D366;
+  --wa-dark: #1DA851;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Poppins', 'Hind Siliguri', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-dark);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif-display {
+  font-family: 'Playfair Display', 'Hind Siliguri', serif;
+}
+
+.font-bengali {
+  font-family: 'Hind Siliguri', 'Poppins', sans-serif;
+}
+
+@keyframes rakhiShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-rakhi {
+  background-size: 200% 100%;
+  animation: rakhiShift 8s ease-in-out infinite;
+}
+
+@keyframes softShine {
+  0% { transform: translateX(-100%); }
+  50%, 100% { transform: translateX(200%); }
+}
+
+.shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 80%
+  );
+  animation: softShine 5s infinite;
+  pointer-events: none;
+}
+
