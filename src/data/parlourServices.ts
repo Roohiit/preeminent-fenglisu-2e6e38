@@ -21,7 +21,7 @@ export const JYYANGRA_LOCATION = {
 export const SOCIAL_LINKS = {
   facebook: 'https://www.facebook.com/velvetcanvasparlour',
   instagram: 'https://www.instagram.com/velvetcanvaskolkata',
-  googleReview: 'https://maps.google.com/?q=Sky+View+Apartment+Jyangra+Bazar+Kolkata+700059',
+  googleReview: 'https://share.google/qaAMiM87Lw5QtA4KH',
 };
 
 export const CATEGORIES: ServiceCategory[] = [
